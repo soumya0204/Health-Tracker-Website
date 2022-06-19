@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+
+body {
+  background: #f6f6f6;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.box {
+  width: 320px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.box .heading {
+  background: #03a9f4;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Rubik";
+}
+
+.faqs {
+  padding: 0px 20px 20px;
+}
+
+::-webkit-details-marker {
+  float: right;
+  margin-top: 3px;
+}
+
+details {
+  background: #f6f6f6;
+  padding: 10px 20px;
+  border-radius: 7px;
+  margin-top: 20px;
+  font-family: "Rubik";
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+details summary {
+  outline: none;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  width: 250px;
+  height: 100vh;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.sidebar i {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  margin: 10px;
+  font-size: 2em;
+  padding: 5px;
+  cursor: pointer;
+}
+.menu {
+  width: 200px;
+  height: 100vh;
+  background: #eee;
+}
+.menu ul {
+  padding: 10px;
+  margin-top: 20px;
+  list-style: none;
+}
+.menu ul li {
+  padding: 10px;
+  font-size: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.menu ul li:hover {
+  background: #ccc;
+}
+
+#chk {
+  display: none;
+}
+#chk:checked ~ .sidebar {
+  left: 0;
+}
+
+#chk:checked ~ header h2 {
+  transform: translateX(270px);
+}
